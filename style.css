@@ -1,0 +1,409 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,500;1,300;1,500&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: 0;
+    font-family: 'Poppins', sans-serif;
+}
+body{
+    background-color:#12043E;
+
+    } 
+
+/*cabeçalho*/
+nav{
+    background-color:#01E7B8;
+    height: 80px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav ul{
+    display: flex;
+    align-items: center;
+    list-style: none;
+    padding: 10px;
+}
+nav li{
+    margin-left: 7px;
+}
+nav li a{
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: 500px;
+    color:#12043E;
+    padding: 8px 15px;
+    border-radius: 50px;
+    transition: 0.3ms;
+}
+nav li a:hover{
+    background-color: #0052D5;
+    color:#ffff;
+    
+}
+.logo{
+    width: 6%;
+    margin-left: 1%;
+}
+/* Fim do cabeçalho*/
+
+/* Bloco principal */
+/* Banner de fundo do bloco principal */
+.bannerprincipal{
+    background-image: url('imagensib/fundobloco1.jpg');
+    height: 80vh;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    display: flex;
+    align-items:center;
+    justify-content: center;
+    text-align: center;
+}
+/* Textos do banner de fundo do bloco principal */
+.texto .titulo{
+    color: #ffff;
+    font-size: 60px;
+    font-weight: 600;
+    display: flex;
+}
+.texto .subtitulo{
+    color: #ffff;
+    font-size: 50px;
+    font-weight: 600;
+}
+/* Fim do bloco principal */
+
+/* Inicio do primeiro bloco */
+/* Textos do primeiro bloco */
+
+.texto1{
+    text-align: center;
+    float:none;
+    padding: 200px 60px;
+    display: inline-block;
+}
+.texto1 h1{
+    color: #ffff;
+    font-size: 40px;
+    font-weight: 600;
+}
+.texto1 h2{
+    color: #ffff;
+    font-size: 20px;
+    font-weight: 100px;
+}
+/* Imagem da logo do primeiro bloco*/
+.imgprimeirobloco{
+    margin-top: 10px;
+}
+/* Botão do primeiro bloco */
+
+.pesquisar{
+    padding: 10px 50px;
+    width: 300px;
+    text-align: left;
+    border-radius: 100px;
+    margin-top: 3%;
+    font-weight:bold;
+    border: 2px solid #0052D5;
+    
+}
+/* Fim do primeiro bloco */
+
+/* Segundo Bloco */
+.modalidades{
+    background-color: #01E7B8;
+    border:3px solid #01E7B8;
+    border-radius: 20px;
+    float: left;
+    width: 20%;
+    margin-left: 50px;
+    margin-top: 80px;
+}
+.modalidades img{
+    border-radius: 20px;
+    max-width: 100%;
+
+}
+.modalidades h3{
+    text-align: center;
+}
+.modalidades:hover{
+    transform:scale(1.2);
+    background-color: #000000;
+    color: #ffff;
+    border:3px solid #000000;
+}
+
+
+
+/* Fim do segundo bloco */
+
+/* Tercero Bloco (bloco dos planos)*/
+.terceirobloco{
+    background-color: #190466;
+}
+/* Configuração de todos os planos */
+.planos{
+     margin-top:20px;
+     margin-right:30px;
+     margin-left:30px;
+     display: inline-block;
+     
+}
+.planos .basic{   
+    margin: 10px;
+    font-size: 30px;	
+    padding: 10px;
+    background-color:#12043E;
+    border-radius:60px;
+    text-align:center;
+    display:inline-block;
+    color:#ffff;
+    font-size:20px;
+}
+.planos .gold{  
+    display: inline-block;   
+    margin: 10px;
+    font-size: 60px;	
+    padding: 10px;
+    background-color:#12043E;
+    border-radius:60px;
+    text-align:center;
+    font-size: 20px;
+    color:#ffff;
+    
+}
+.planos .premium{  
+    display: inline-block;   
+    margin: 10px;	
+    padding: 10px;
+    background-color:#12043E;
+    border-radius:60px;
+    text-align:center;
+    display:inline-block;
+    font-size: 20px;
+    color:#ffff;
+    margin-right: 30px;
+}
+.planos .basic:hover{
+    transform:scale(1.1);
+    border: 2px solid #01E7B8;
+}
+.planos .gold:hover{  
+    transform:scale(1.1);
+    border: 2px solid #FFBE00;
+    
+}
+.planos .premium:hover{
+    transform:scale(1.1);
+    border: 2px solid #B7B7B7;
+}
+
+/* Imagem (cartaz)*/
+.imgcartaz{
+    float:left;
+    border-radius:20px;
+    margin-right:30px;
+    margin-left:50px;
+    margin-bottom: 100px;
+    display: flex;
+    border: 3px solid #0052D5;
+    width: 25%;
+}
+.imgcartaz:hover{
+    transform:scale(1.1);
+    border: 3px solid #F4EDE0;
+}
+/* Configuração dos botôes de valores*/
+.botaovalor{
+    background-color:#01E7B8;
+    border-radius:50px;
+    padding: 8px 30px;
+    font-size:50;
+    font-weight: bold;
+}
+.botaovalor:hover{
+    background-color: #0052D5;
+    color:#ffff;
+    cursor: pointer;
+    
+}
+/* Titulos do terceiro bloco*/
+.titplano{
+    font-size:50px;
+    color:#ffff;
+    text-align: center;
+    margin-top: 80px;
+}
+/* Titulos dos planos*/
+.titb{
+    font-size:40px;
+    color:#01E7B8;
+    border-radius:10px;
+    margin-right:50px;
+    margin-left:50px
+}
+.titg{
+    font-size:40px;
+    color:#FFBE00;
+    border-radius:10px;
+    margin-right:50px;
+    margin-left:50px;
+}
+.titp{
+    font-size:40px;
+    color:#B7B7B7;
+    border-radius:10px;
+    margin-right:50px;
+    margin-left:50px;
+}
+
+/* Fim do terceiro bloco */
+
+/* Quarto bloco (bloco do app) */
+.quartobloco{
+    background-color: #2a186d;
+}
+
+/* Textos do quarto bloco*/
+.textobloco4{
+    text-align: center;
+    float:left;
+    margin-top: 10%;
+    margin-left: 5%;
+}
+.textobloco4 h1{
+    color: #ffff;
+    font-size: 40px;
+    font-weight: 600;
+}
+.textobloco4 h2{
+    color: #ffff;
+    font-size: 30px;
+    font-weight: 100px;
+}
+.textobloco4 h3{
+    color: #ffff;
+    font-size: 20px;
+    font-weight: 100px;
+}
+/* Imagens do quarto bloco*/
+.imglogoapp{
+    width: 50%;
+    margin-top: 0%;
+    margin-right:30px;
+    margin-left:10%;
+}
+.imgqrapp{
+    width: 15%;
+    margin-top: -12%;
+    margin-left: 22.5%;
+    margin-bottom: 5%;
+    border-radius: 2%;
+    border: 3px solid #01E7B8;
+}
+.imgqrapp:hover{
+    transform:scale(1.1);
+}
+.imgcell{
+    width: 30%;
+    border-radius:20px;
+    margin-top: 10%;
+    margin-right:30px;
+    margin-left:50px;
+    margin-bottom: 50px;
+    display: inline-block;
+}
+
+/* Fim do quarto bloco*/
+
+/* Início do quinto bloco*/
+
+/* Configurações do bloco*/
+.quintobloco{
+    margin-top: 5%;
+    margin-bottom: 5%;
+}
+.quintobloco h2{
+    text-align: center;
+    color:#ffff;
+    display: flex;
+    justify-content: center;
+    
+    
+}
+/* Configurações cadastro*/
+.cadastro{
+    border-radius: 100px;
+    background-color: #030d66;
+    border: 5px solid #0052D5;
+    padding: 10px 40px;
+    margin-right: 5%;
+    width: 45%;
+    display: flex;
+    align-items:center;
+    justify-content: center;
+    text-align: center;
+    margin-left: 25%;
+   
+}
+.email{
+    padding: 10px 50px;
+    width: 300px;
+    text-align: left;
+    border-radius: 100px;
+    margin-top: 3%;
+    margin-bottom: 3%;
+    font-weight:bold;
+    
+}
+.enviar{
+    padding: 10px 50px;
+    border-radius: 200px;
+    color:#000000;
+    background-color: #01E7B8;
+    font-weight:bold;
+}
+
+.enviar:hover{
+    background-color: #0052D5;
+    color:#ffff;
+    cursor: pointer;
+
+}
+
+/* Fim do quinto bloco*/
+
+/* Rodapé */
+footer{
+  background-color: #212B38;
+  align-items:center;
+  justify-content: center;
+  text-align: center;
+ 
+}
+/* Logo do rodapé*/
+.imgrodape{
+    width: 10%;
+    margin-top: 5%;
+}
+/*  redes sociais*/
+.redes{
+    display: flex;
+    align-items:center;
+    justify-content: center;
+    text-align: center;
+   
+}
+/* configuração dos ícones*/
+.icones{
+    width: 8%;
+    margin-bottom: 3%;
+}
+.icones:hover{
+    transform:scale(1.1);
+}
+/* Fim do rodapé*/
