@@ -56,6 +56,31 @@ public class clienteDao {
 		}
 		
 	}
+		public ArrayList<Cliente> ArrayListarCliente(){
+		Conexao con = null;
+		try {
+			con = new Conexao();
+			ResultSet result = con.executeQuery("SELECT * FROM cliente;");
+			ArrayList<Cliente> listarCliente = new ArrayList<Cliente>();
+			int i = 0;
+			
+			while(result.next()) {
+				Cliente cliente = new Cliente();
+				cliente.setId_cliente(result.getInt("id_cliente"));
+				cliente.setNome(result.getString("nome"));
+				cliente.setDt_nascimento(result.getString("dt_nascimento"));
+				cliente.setCpf(result.getString("cpf"));
+				listarCliente.add(i, cliente);
+				i++;
+			}
+			return listarCliente;
+		}catch (SQLException e) {
+			System.out.println("Erro na função listar cliente DAO" + e);
+			return null;
+		}
+	}
+
+
 	*/
 	
 	
