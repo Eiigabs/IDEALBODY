@@ -10,27 +10,71 @@
 }
 
 body{
-    margin-top: 3%;
-    margin-bottom: 3%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background-color: #12043E;
+    background-color: #0c071b;
+   
 }
 
+
+
+/*cabeçalho*/
+nav{
+    background-color:#01E7B8;
+    height: 80px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav ul{
+    display: flex;
+    align-items: center;
+    list-style: none;
+    padding: 10px;
+}
+nav li{
+    margin-left: 7px;
+}
+nav li a{
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: 500px;
+    color:#12043E;
+    padding: 8px 15px;
+    border-radius: 50px;
+    transition: 0.3ms;
+}
+nav li a:hover{
+    background-color: #0052D5;
+    color:#ffff;
+    
+}
+.logo{
+    width: 5%;
+    margin-left: 1%;
+
+}
+/* Fim do cabeçalho*/
+
+
+
+
 .container{
-    width: 120%;
-    height: 155vh;
+    width: 60%;
+    height: 120vh;
     display: flex;
     background-color: #0c071b;
     box-shadow: 5px 5px 10px rgb(2, 223, 193); 
     justify-content: center;
     align-items: center;
     flex-direction: column;
+    border-top: 5%;
     border-radius: 5%;
     width: 50%;
     color:#ffff;
     font-size: 18px;
+    margin-top: 5%;
+    margin-bottom: 5%;
+    margin-left: 10%;
 }
 .formheader{
    
@@ -66,8 +110,11 @@ body{
     
 }
 .logginbotao button:hover{
-    background-color: #0052D5;
+    background-color: transparent;
+    border: 2px solid #01E7B8;
     color:#ffff;
+    box-shadow: 0 0 10px 0 #01E7B8 inset,
+                0 0 10px 4px #01E7B8;
 }
 .inputinfornm{
     display: flex;
@@ -88,11 +135,13 @@ body{
     box-shadow: 1px 1px 6px #000000;
 }
 .inputbox input:hover{
-    background-color: #eeeeeed8;
+    background-color: #ffffff;
     border:none;
 }
 .inputbox input:focus-visible{
     outline: 3px solid #0052D5;
+    box-shadow: 0 0 10px 0 #0052D5 inset,
+                0 0 10px 4px #0052D5;
 }
  .gruposdegenero{
     display: flex;
@@ -127,6 +176,39 @@ body{
     margin-top: 0.8rem;
  }
  .botaocontinuar button:hover{
-    background-color: #0052D5;
+    background-color: transparent;
+    border: 2px solid #01E7B8;
     color:#ffff;
+    box-shadow: 0 0 10px 0 #01E7B8 inset,
+                0 0 10px 4px #01E7B8;
 }
+
+footer{
+    background-color: #212B38;
+    align-items:center;
+    justify-content: center;
+    text-align: center;
+   
+  }
+  /* Logo do rodapé*/
+  .imgrodape{
+      width: 10%;
+      margin-top: 5%;
+  }
+  /*  redes sociais*/
+  .redes{
+      display: flex;
+      align-items:center;
+      justify-content: center;
+      text-align: center;
+     
+  }
+  /* configuração dos ícones*/
+  .icones{
+      width: 8%;
+      margin-bottom: 3%;
+  }
+  .icones:hover{
+      transform:scale(1.1);
+  }
+  /* Fim do rodapé*/
