@@ -1,0 +1,214 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,500;1,300;1,500&display=swap');
+
+
+
+*{
+    padding:0;
+    margin:0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body{
+    background-color: #0c071b;
+   
+}
+
+
+
+/*cabeçalho*/
+nav{
+    background-color:#01E7B8;
+    height: 80px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav ul{
+    display: flex;
+    align-items: center;
+    list-style: none;
+    padding: 10px;
+}
+nav li{
+    margin-left: 7px;
+}
+nav li a{
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: 500px;
+    color:#12043E;
+    padding: 8px 15px;
+    border-radius: 50px;
+    transition: 0.3ms;
+}
+nav li a:hover{
+    background-color: #0052D5;
+    color:#ffff;
+    
+}
+.logo{
+    width: 5%;
+    margin-left: 1%;
+
+}
+/* Fim do cabeçalho*/
+
+
+
+
+.container{
+    width: 60%;
+    height: 120vh;
+    display: flex;
+    background-color: #0c071b;
+    box-shadow: 5px 5px 10px rgb(2, 223, 193); 
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    border-top: 5%;
+    border-radius: 5%;
+    width: 50%;
+    color:#ffff;
+    font-size: 18px;
+    margin-top: 5%;
+    margin-bottom: 5%;
+    margin-left: 10%;
+}
+.formheader{
+   
+    margin-bottom: 3rem;
+    display: flex;
+    justify-content: space-between;
+    color:#ffff;
+}
+.formheader h1::after{
+    content:'';
+    display: block;
+    width: 10rem;
+    height: 0.3rem;
+    background-color: #01E7B8;
+    margin:0 auto;
+    position: absolute;
+    border-radius: 10px;
+
+}
+.logginbotao{
+    display: flex;
+    align-items: center;
+    margin-left: 80px;
+}
+.logginbotao button{
+    border:none;
+    border-radius: 200px;
+    color:#000000;
+    background-color: #01E7B8;
+    font-weight:bold;
+    padding: 10px 30px;
+    cursor: pointer;
+    
+}
+.logginbotao button:hover{
+    background-color: transparent;
+    border: 2px solid #01E7B8;
+    color:#ffff;
+    box-shadow: 0 0 10px 0 #01E7B8 inset,
+                0 0 10px 4px #01E7B8;
+}
+.inputinfornm{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 1rem;
+}
+.inputbox{
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 1.1rem;
+}
+.inputbox input{
+    margin: 0.6rem;
+    padding: 0.8rem 1.2rem;
+    border:none;
+    border-radius: 10px;
+    box-shadow: 1px 1px 6px #000000;
+}
+.inputbox input:hover{
+    background-color: #ffffff;
+    border:none;
+}
+.inputbox input:focus-visible{
+    outline: 3px solid #0052D5;
+    box-shadow: 0 0 10px 0 #0052D5 inset,
+                0 0 10px 4px #0052D5;
+}
+ .gruposdegenero{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 0.62rem;
+    padding: 0 0 .5rem;
+ }
+ .generoinput{
+    display: flex;
+    align-items: center;
+    margin-right: 15px;
+ }
+ .generoinput input{
+    margin-right: 0.40rem;
+ }
+ .generoinput input:hover{
+    cursor: pointer;
+ }
+ .botaocontinuar{
+    align-items: center;
+    text-align: center;
+ }
+ .botaocontinuar button{
+    width: 50%;
+    border:none;
+    border-radius: 200px;
+    color:#000000;
+    background-color: #01E7B8;
+    font-weight:bold;
+    padding: 10px 50px;
+    cursor: pointer;
+    margin-top: 0.8rem;
+ }
+ .botaocontinuar button:hover{
+    background-color: transparent;
+    border: 2px solid #01E7B8;
+    color:#ffff;
+    box-shadow: 0 0 10px 0 #01E7B8 inset,
+                0 0 10px 4px #01E7B8;
+}
+
+footer{
+    background-color: #212B38;
+    align-items:center;
+    justify-content: center;
+    text-align: center;
+   
+  }
+  /* Logo do rodapé*/
+  .imgrodape{
+      width: 10%;
+      margin-top: 5%;
+  }
+  /*  redes sociais*/
+  .redes{
+      display: flex;
+      align-items:center;
+      justify-content: center;
+      text-align: center;
+     
+  }
+  /* configuração dos ícones*/
+  .icones{
+      width: 8%;
+      margin-bottom: 3%;
+  }
+  .icones:hover{
+      transform:scale(1.1);
+  }
+  /* Fim do rodapé*/
