@@ -4,33 +4,30 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link  rel ="stylesheet" href="cadastro.css">
-    <link  rel="shortcut icon" href="imagensib/iconib.ico" typr="image/icon">
+    <link  rel ="stylesheet" href="Cadastro.css">
+    <link  rel="shortcut icon" href="imagensib/iconib.ico" type="image/icon">
     <title> Cadastro </title>
 </head>
 <body>
 
 
     <nav>
-
         <img  class="logo" src="imagensib/logoibofc.png"/>
 
     <ul>
+   		<li class="logginbotao"> <a href="Login.jsp"> ENTRAR </a> </li>
         <li> <a href="#tr"> INÍCIO </a> </li>
         <li> <a href="#maisinf"> MAIS INFORMAÇÕES </a> </li>
     </ul>
 </nav>
 
-    
+    <br>
     <div class="container"> 
         <div class="form">
             <form name = "Cadastro" action="RespostaCadastro.jsp" method = "post">
                 <div class="formheader"> 
                     <div class="tituloform"> 
                         <h1> Faça seu cadastro!</h1>
-                    </div>
-                    <div class="logginbotao">
-                        <button><a href="#" ></a> Entrar </button>
                     </div>
                 </div>
                 <div class="inputinform">
@@ -47,24 +44,7 @@
                         <label for="dat"> Data de Nascimento </label>
                         <input id="dat" type="date" name="dat" placeholder="" required>
                     </div>
-                    
-                    <div class="inputbox">
-                        <label for="number"> Telefone</label>
-                        <input id="number" type="tel" name="number" placeholder="(xx) xxxxx-xxxx" required>
-                    </div>
-                    <div class="inputbox">
-                        <label for="email"> E-mail</label>
-                        <input id="email" type="email" name="email" placeholder="Informe seu E-mail" required>
-                    </div>
-                    <div class="inputbox">
-                        <label for="password"> Senha</label>
-                        <input id="password" type="password" name="password" placeholder="Informe sua senha" required>
-                    </div>
-                    <div class="inputbox">
-                        <label for="confirmpassword"> Confirme sua Senha</label>
-                        <input id="confirmpassword" type="password" name="confirmpassword" placeholder="Informe sua Senha novamente" required>
-                    </div>
-                    <div class="genero">
+                     <div class="genero">
                    <div class="generotitulo">
                     <p> Gênero</p>
                      </div>
@@ -88,12 +68,25 @@
                                 <input type="radio" id="radio4" name="none"> 
                                 <label for="none"> Prefiro não informar </label>
                             </div>
-                          
                          </div>
                     </div>
-                    
-
-
+                    <div class="inputbox">
+                        <label for="number"> Telefone</label>
+                        <input id="number" type="tel" name="number" placeholder="(xx) xxxxx-xxxx" required>
+                    </div>
+                    <div class="inputbox">
+                        <label for="email"> E-mail</label>
+                        <input id="email" type="email" name="email" placeholder="Informe seu E-mail" required>
+                    </div>
+                    <div class="inputbox">
+                        <label for="password"> Senha</label>
+                        <input id="password" type="password" name="password" placeholder="Informe sua senha" required>
+                    </div>
+                    <div class="inputbox">
+                        <label for="confirmpassword"> Confirme sua Senha</label>
+                        <input id="confirmpassword" type="password" name="confirmpassword" placeholder="Informe sua Senha novamente" required>
+                    </div>
+                 
                 </div>
 
                    <div class="botaocontinuar">
@@ -103,10 +96,8 @@
             </form> 
 
         </div>
+        <br>
     </div>
-
-
-
     <footer>
         <img class="imgrodape"src="imagensib/logocinza.png"/>
         <div class="redes">
