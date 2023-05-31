@@ -1,2 +1,0 @@
-# IDEALBODY
-A academia ideal
