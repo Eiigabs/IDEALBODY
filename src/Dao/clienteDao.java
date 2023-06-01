@@ -2,10 +2,8 @@ package Dao;
 import java.sql.ResultSet;
 import java.sql.SQLException;
 import java.util.ArrayList;
-
 import Model.Cliente;
 import Util.Conexao;
-
 
 public class clienteDao {
 	
@@ -56,6 +54,18 @@ public class clienteDao {
 		}
 	}
 
-	
+	public boolean Logar(Login c){
+		Conexao con = null;
+		String user = ("SELECT * FROM login  WHERE login = '"+usuario+"' AND senha = '"+senha+"' ");
+		try {
+			java.sql.Statement test = con().createStatement();
+			test.executeQuery(user);
+			return true;
+		} catch (SQLException e) {
+			System.out.println("Erro na função logar DAO" + e);
+			return false;
+		}
+
+	}
 	
 }
