@@ -7,7 +7,7 @@
 <html>
 <head>
 <meta charset="UTF-8">
-<title>Tela de Listar Cliente</title>
+<title>Lista de Cliente</title>
 </head>
 <body>
 
@@ -25,7 +25,7 @@
 </tr>
 <%
 clienteDao clienteDao = new clienteDao();
-ArrayList<Cliente> cliente = clienteDao.ArrayAlterarCliente();
+ArrayList<Cliente> cliente = clienteDao.ArrayListaCliente();
 for(Cliente c: cliente){%>
 	<tr>
 		<td><%= c.getId_cliente() %></td>
@@ -46,8 +46,3 @@ for(Cliente c: cliente){%>
 
 </body>
 </html>
-
-
-
-
-
