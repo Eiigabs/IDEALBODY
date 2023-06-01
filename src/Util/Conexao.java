@@ -12,8 +12,9 @@ public class Conexao {
 
 	    public Conexao() {
 	        try {
-	            Class.forName("mysql.Driver");
-	            connection = DriverManager.getConnection("jdbc:mysql://localhost" + "/idealbody", "root", "0429");
+	           Class.forName("com.mysql.cj.jdbc.Driver");
+	        	 //Class.forName("org.gjt.mm.mysql.Driver");
+	            connection = DriverManager.getConnection("jdbc:mysql://localhost" + "/idealbody?useTimezone=true&serverTimezone=UTC", "root", "0429");
 	            System.out.println("conectou!");
 	        } catch (ClassNotFoundException ex) {
 	            System.out.println("Nao foi possıvel encontrar a classe " + "do Driver do MySQL" + ex);

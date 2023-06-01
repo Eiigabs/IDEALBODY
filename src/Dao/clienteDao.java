@@ -1,62 +1,35 @@
 package Dao;
-
-import java.sql.Connection;
-import java.sql.PreparedStatement;
+import java.sql.ResultSet;
 import java.sql.SQLException;
-import javax.swing.JOptionPane;
+import java.util.ArrayList;
 
 import Model.Cliente;
-import Util.ConexaoTest;
+import Util.Conexao;
+
 
 public class clienteDao {
-	Connection con;
-	PreparedStatement pstm;
 	
-	public void InserirCliente(Cliente c) throws ClassNotFoundException{
-		
-		String sql = "INSERT INTO cliente(nome, cpf, data_nascimento, telefone, email, genero, senha) "
-				+ "VALUES (?,?,?,?,?,?)";
-		con = new ConexaoTest().conexao();
-	
-		try{
-			pstm = con.prepareStatement(sql);
-			pstm.setString(1, c.getNome());
-			pstm.setString(2, c.getCpf());
-			pstm.setString(3, c.getData());
-			pstm.setString(4, c.getTelefone());
-			pstm.setString(5, c.getGenero());
-			pstm.setString(6, c.getSenha());
-			
-			pstm.execute();
-			pstm.close();
-			
-			
-		}catch(SQLException e ){
-			JOptionPane.showMessageDialog(null, "ERRO AO INSERIR CLIENTE");
-		}		
-		
-	}
-		
-		
-		/**
+	public boolean InserirCliente(Cliente c){
+		Conexao con = null;
 		try{
 			con = new Conexao();
 			con.executeUpdate("INSERT INTO cliente(nome, cpf, data_nascimento, telefone, email, genero, senha) VALUES ('"
-				 + c.getNome() + "',"
+				 + c.getNome() + "','"
 				 + c.getCpf() + "','"
 				 + c.getData()+ "','"
 				 + c.getTelefone() + "','"
 				 + c.getEmail() + "','"
 				 + c.getGenero() + "','"
 				 + c.getSenha() + "');");
-			
+			return true;
 		}catch(SQLException e ){
 			System.out.println("ERRO AO INSERIR CLIENTE");
-			
+			return false;
 		}
 		
 	}
-		public ArrayList<Cliente> ArrayListarCliente(){
+	
+	public ArrayList<Cliente> ArrayAlterarCliente(){
 		Conexao con = null;
 		try {
 			con = new Conexao();
@@ -68,8 +41,11 @@ public class clienteDao {
 				Cliente cliente = new Cliente();
 				cliente.setId_cliente(result.getInt("id_cliente"));
 				cliente.setNome(result.getString("nome"));
-				cliente.setDt_nascimento(result.getString("dt_nascimento"));
 				cliente.setCpf(result.getString("cpf"));
+				cliente.setData(result.getString("data_nascimento"));
+				cliente.setTelefone(result.getString("telefone"));
+				cliente.setEmail(result.getString("email"));
+				cliente.setGenero(result.getString("genero"));
 				listarCliente.add(i, cliente);
 				i++;
 			}
@@ -80,8 +56,6 @@ public class clienteDao {
 		}
 	}
 
-
-	*/
 	
 	
 }
