@@ -83,7 +83,58 @@ public class clienteDao {
 	        return false;
 	    }
 	
-	
+	 public boolean AlterarCliente(Cliente c){
+		 Conexao con = null;
+			try{
+			con = new Conexao();
+			con.executeUpdate("UPDATE cliente SET"
+			+ " nome= '" + c.getNome() + "' , "
+			+ " dt_name= '" + c.getData()+"', " 
+			+ " cpf= '" + c.getCpf()+"' "
+			+ " WHERE id_cliente = " + c.getId_cliente());
+			return true;
+			}catch(SQLException e){
+				System.out.println("ERRO");
+			return false;	
+			}
+		}
+
+		public Cliente ListarClienteID(int id){
+			Conexao con = null;
+			try{
+			con = new Conexao();
+			ResultSet result = con.executeQuery("SELECT * FROM cliente WHERE id_cliente = " + id);  	
+			result.next();
+			Cliente cliente = new Cliente();
+			cliente.setId_cliente(result.getInt("id_cliente"));
+			cliente.setNome(result.getString("nome"));
+			cliente.setCpf(result.getString("cpf"));
+			cliente.setData(result.getString("data_nascimento"));
+			cliente.setTelefone(result.getString("telefone"));
+			cliente.setEmail(result.getString("email"));
+			cliente.setGenero(result.getString("genero"));
+		
+				return cliente;
+			}catch(SQLException e){
+				System.out.println("ERRO" + e);
+			
+			}
+			return null;
+		}	
+
+		public boolean DeletarCliente(int id){
+			Conexao con = null;
+			try{
+			con = new Conexao();
+			con.executeUpdate("DELETE FROM cliente WHERE id_cliente = " + id);
+			return true;
+			}catch(SQLException e){
+				System.out.println("ERRO");
+			return false;	
+			}
+		
+		
+		}
 	
 
 }
