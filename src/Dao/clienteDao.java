@@ -1,4 +1,5 @@
 package Dao;
+
 import java.sql.ResultSet;
 import java.sql.SQLException;
 import java.util.ArrayList;
@@ -6,7 +7,7 @@ import Model.Cliente;
 import Util.Conexao;
 
 public class clienteDao {
-	
+
 	public boolean InserirCliente(Cliente c){
 		Conexao con = null;
 		try{
@@ -27,7 +28,7 @@ public class clienteDao {
 		
 	}
 	
-	public ArrayList<Cliente> ArrayAlterarCliente(){
+	public ArrayList<Cliente> ArrayListaCliente(){
 		Conexao con = null;
 		try {
 			con = new Conexao();
@@ -53,19 +54,36 @@ public class clienteDao {
 			return null;
 		}
 	}
-
-	public boolean Logar(Login c){
-		Conexao con = null;
-		String user = ("SELECT * FROM login  WHERE login = '"+usuario+"' AND senha = '"+senha+"' ");
-		try {
-			java.sql.Statement test = con().createStatement();
-			test.executeQuery(user);
-			return true;
-		} catch (SQLException e) {
-			System.out.println("Erro na função logar DAO" + e);
-			return false;
-		}
-
-	}
 	
+	 public boolean verificarLogin(String nomeUsuario, String senha) {
+		 Conexao con = null;
+		 try {
+			 con = new Conexao();
+	           
+	            // Preparar a consulta SQL
+	        	 
+	            String consulta = "SELECT COUNT(*) FROM cliente WHERE cpf = '" + nomeUsuario + "' AND senha = '" + senha + "'";
+	            
+	            // Executar a consulta
+	            
+	            ResultSet rs = con.executeQuery(consulta);
+
+	            // Verificar se o usuário existe no banco de dados
+	            rs.next();
+	            int count = rs.getInt(1);
+
+	          
+	            // Retornar true se o usuário existe e a senha está correta
+	            return count == 1;
+	        } catch (SQLException e) {
+	        	System.out.println("Erro na funcao verificarLogin DAO");
+	        }
+
+	        // Em caso de erro ou se o usuário não existe, retornar false
+	        return false;
+	    }
+	
+	
+	
+
 }

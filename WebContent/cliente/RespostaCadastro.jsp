@@ -14,8 +14,6 @@
 </head>
 <body>
 	<%
-	
-	try{
 	Cliente cliente1 = new Cliente();
 	
 	cliente1.setNome(request.getParameter("firstname"));
@@ -27,14 +25,8 @@
 	cliente1.setSenha(request.getParameter("password"));
 	
 	clienteDao cliente = new clienteDao();
-	/**	
+	
 	cliente.InserirCliente(cliente1);
-	*/
-	} catch (Exception e){
-		
-		JOptionPane.showMessageDialog(null, "ERRO AO CRIAR CADASTRO");
-		
-	}
 	
 	%>
 	<h1>Obrigado pelo seu cadastro</h1>

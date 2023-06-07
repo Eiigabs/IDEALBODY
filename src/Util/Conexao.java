@@ -9,7 +9,28 @@ public class Conexao {
 	 public static String status = "Não conectou...";
 	 private Connection connection;
 	 private Statement statement;
+	
 
+	 public Conexao(String servidor, String database, String user, String password) throws SQLException {
+	        try {
+	            Class.forName("com.mysql.cj.jdbc.Driver");
+	            connection = DriverManager.getConnection("jdbc:mysql://" + servidor + "/" + database, user, password);
+	        } catch (ClassNotFoundException ex) {
+	            System.out.println("Nao foi possıvel encontrar a classe do " + "Driver do MySQL");
+	        } catch (SQLException ex) {
+	            System.out.println("Nao foi possıvel conectar ao servidor");
+	            throw ex;
+	        }
+	        try {
+	            statement = connection.createStatement();
+	        } catch (SQLException ex) {
+	            System.out.println("Nao foi poss´ıvel criar a statement");
+	            throw ex;
+	        }
+	    }
+	 
+	 
+	 
 	    public Conexao() {
 	        try {
 	           Class.forName("com.mysql.cj.jdbc.Driver");
@@ -27,6 +48,7 @@ public class Conexao {
 	            System.out.println("Nao foi possıvel criar a statement" + ex);
 	        }
 	    }
+	    
 	    /**
 	     * * Executa um update na base de dados * @param update String SQL a ser
 	     * executado * @throws SQLException se n~ao for poss´ıvel executar
@@ -42,6 +64,8 @@ public class Conexao {
 	        }
 	    }
 
+	    
+	    
 	    /**
 	     * * Executa uma consulta na base de dados * @param query String SQL a ser
 	     * executado * @return Um objeto do tipo ResultSet contendo o * resultado da
