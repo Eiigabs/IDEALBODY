@@ -37,7 +37,7 @@ for(Cliente c: cliente){%>
 		<td><%= c.getGenero() %></td>
 		
 		<td> <a href="AlterarCliente.jsp"> <img src="imagensib/edit.png" width="18px" height="18px"> </a></td>
-		<td> <a href="DeletarCliente.jsp"><img src="imagensib/delete.png" width="18px" height="18px"> </a></td>
+		<td> <a href="RespostaDeletarCliente.jsp"><img src="imagensib/delete.png" width="18px" height="18px"> </a></td>
 	</tr>
 <%} %>
 </table>
