@@ -11,20 +11,21 @@
 <body>
 
 <%
-
-        int idUsuario = Integer.parseInt(request.getParameter("idcliente"));
-        clienteDao deleter = new clienteDao();
-        boolean usuarioExcluido = deleter.DeletarCliente(idUsuario);
-
-        if (usuarioExcluido) {
-            out.println("<script>alert('Usuário excluído');</script>");
-            response.sendRedirect("ListaCliente.jsp");
-        } else {
-           
-            out.println("<script>alert('Usuário não encontrado');</script>");
-        }
-    
-%>
+boolean resultado = false;
+ClienteDao clientedao = new ClienteDao();
+resultado = clientedao.DeleteCliente(Integer.parseInt(request.getParameter("idcliente")));
+  
+if(resultado){ %>
+<script language="JavaScript">
+	alert('Cliente Deletado com sucesso!');
+	window.location.href="ListarCliente.jsp"
+</script>
+<% }else{ %>
+<script language="JavaScript">
+	alert('Não foi possível deletar o cliente!');
+	window.location.href="ListarCliente.jsp"
+</script>
+<%}%>
 
 </body>
 </html>
