@@ -7,7 +7,7 @@
 <html>
 <head>
 <meta charset="UTF-8">
-<title>Lista de Cliente</title>
+<title>IdealBody - Clientes</title>
 </head>
 <body>
 
