@@ -1,0 +1,241 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,500;1,300;1,500&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: 0;
+    font-family: 'Poppins', sans-serif;
+}
+
+body{
+    background-image: url('imagensib/fundocadastro.jpg');
+    height: 100vh;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+
+
+nav{
+    
+    height: 80px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-align: right;
+}
+
+nav ul{
+    display: flex;
+    align-items: center;
+    list-style: none;
+    padding: 10px;
+}
+nav li{
+    margin-left: 7px;
+}
+nav li a{
+    color:#ffff;
+    font-weight:450;
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: 500px;
+    padding: 8px 15px;
+    border-radius: 10px;
+    transition: 0.3ms;
+}
+
+
+/* Possível animação*/
+nav li a::before{
+    content: '';
+    background: linear-gradient(#00E5FF, #B400FB);
+    animation: animate 5s linear infinite;
+}
+
+@keyframes animate{
+
+    0%{transform:rotate(0deg);}
+
+    100% {transform:rotate (360deg);}
+}
+
+/* Fim da animação*/
+nav li a:hover{
+    background-color: transparent;
+    /*background-color: #0052D5;*/
+    color:#ffff;
+    box-shadow: 0 0 10px 0 #0052D5 inset,
+    0 0 10px 4px #0052D5;
+    
+}
+
+.logo{
+    width: 10%;
+    margin-top: 2%;
+    margin-left: 1%;
+}
+/* Fim do cabeçalho*/
+
+.bannerprincipal{
+ 
+   
+   
+  
+   
+}
+
+.cadastro{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 2%;
+}
+.containerdecadastro{
+
+    position: relative;
+    padding: 60px;
+    background: rgba(32, 27, 27, 0.774);
+    backdrop-filter: blur(15px);
+    border: 1px solid #fff;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.678); border-right: 1px solid rgba(255, 255, 255, 0.699); border-radius: 20px;
+    width: 500px;
+    display: flex;
+    flex-direction: column;
+    box-shadow: 1px 1px 6px #000000;
+    border: none;
+    margin-bottom: 5%;
+}
+
+.cadastro h2{
+    position: relative;
+    width: 100%;
+    text-align: center; 
+    font-size: 2.5em; 
+    font-weight: 600; 
+    margin-bottom: 2rem;
+    display: flex;
+    justify-content: space-between;
+    color:#ffff; 
+}
+.cadastro .boxdeinput{ 
+    position: relative;
+    }
+.cadastro .boxdeinput input {
+    position: relative;
+    width: 100%;
+    padding: 15px 20px;
+    outline: none; font-size: 1.25em;
+    border-radius: 25px;
+    border: none;
+    margin-bottom: 30px;
+}
+
+
+.cadastro .boxdeinput input:hover{
+    background-color: #ffffff;
+    border:none;
+}
+.cadastro .boxdeinput input:focus-visible{
+    outline: 3px solid #01E7B8;
+   
+}
+ .btnlogin{
+    display: flex;
+    align-items: center;
+    border:none;
+    border-radius: 200px;
+    color:#0c071b;
+    background-color: #01E7B8;
+    font-weight:bold;
+    padding: 10px 30px;
+    cursor: pointer;
+    position: relative;
+    text-align: center; 
+    
+}
+
+.btnlogin:hover{
+    background-color: transparent;
+    border: 2px solid #0052d5;
+    color:#ffff;
+    box-shadow: 0 0 10px 0 #0052d5 inset,
+                0 0 10px 4px #0052d5;
+}
+
+
+.inputinfornm{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 1rem;
+}
+.inputbox{
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 1.1rem;
+}
+.inputbox input{
+    margin: 0.6rem;
+    padding: 0.8rem 1.2rem;
+    border:none;
+    border-radius: 10px;
+    box-shadow: 1px 1px 6px #000000;
+}
+.inputbox input:hover{
+    background-color: #ffffff;
+    border:none;
+}
+.inputbox input:focus-visible{
+    outline: 3px solid #0052D5;
+    box-shadow: 0 0 5px 0 #0052D5 inset,
+                0 0 5px 2px #0052D5;
+}
+
+.inputbox label{
+    color: #fff;
+}
+ .gruposdegenero{
+    color:#ffff;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 0.62rem;
+    padding: 0 0 .5rem;
+ }
+ .generotitulo{
+    color:#fff;
+ }
+ .generoinput{
+    display: flex;
+    align-items: center;
+    margin-right: 15px;
+ }
+ .generoinput input{
+    margin-right: 0.40rem;
+ }
+ .generoinput input:hover{
+    cursor: pointer;
+ }
+ .botaocontinuar{
+    align-items: center;
+    text-align: center;
+ }
+ .botaocontinuar button{
+    width: 50%;
+    border:none;
+    border-radius: 200px;
+    color:#fffdfd;
+    background-color: #0052D5;
+    font-weight:bold;
+    padding: 10px 50px;
+    cursor: pointer;
+    margin-top: 0.8rem;
+ }
+ .botaocontinuar button:hover{
+    background-color: transparent;
+    border: 2px solid #01E7B8;
+    color:#ffff;
+    box-shadow: 0 0 10px 0 #0052D5 inset,
+    0 0 10px 4px #0052D5;
+}
