@@ -89,8 +89,11 @@ public class clienteDao {
 			con = new Conexao();
 			con.executeUpdate("UPDATE cliente SET"
 			+ " nome= '" + c.getNome() + "' , "
-			+ " dt_name= '" + c.getData()+"', " 
-			+ " cpf= '" + c.getCpf()+"' "
+			+ " cpf= '" + c.getCpf()+"', "
+			+ " data_nascimento= '" + c.getData()+"', "
+			+ " telefone= '" + c.getTelefone()+"', "
+			+ " email= '" + c.getEmail()+"', "
+			+ " genero= '" + c.getGenero()+"' "
 			+ " WHERE id_cliente = " + c.getId_cliente());
 			return true;
 			}catch(SQLException e){

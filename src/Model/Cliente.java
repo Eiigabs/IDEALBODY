@@ -2,7 +2,6 @@ package Model;
 public class Cliente{
 	
 	private int id_cliente;
-	private int hid_cliente;
 	private String nome;
 	private String cpf;
 	private String data;
@@ -16,12 +15,6 @@ public class Cliente{
 	}
 	public void setId_cliente(int id_cliente) {
 		this.id_cliente = id_cliente;
-	}
-	public int getHid_cliente() {
-		return hid_cliente;
-	}
-	public void setHid_cliente(int id_cliente) {
-		this.hid_cliente = id_cliente;
 	}
 	public String getNome() {
 		return nome;
