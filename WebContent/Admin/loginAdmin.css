@@ -61,8 +61,8 @@ nav li a:hover{
     background-color: transparent;
     /*background-color: #0052D5;*/
     color:#ffff;
-    box-shadow: 0 0 10px #01E7B8 inset,
-                0 0 10px 4px #01E7B8;
+    box-shadow: 0 0 10px #0e00d5 inset,
+                0 0 10px 4px #0e00d5;
     
 }
 
@@ -74,7 +74,7 @@ nav li a:hover{
 /* Fim do cabeçalho*/
 
 .bannerprincipal{
-    background-image: url('imagensib/fundologin.gif');
+    background-image: url('imagensib/fundologinadmin.jpg');
     height: 100vh;
     background-size: cover;
     background-position: center;
@@ -101,9 +101,11 @@ nav li a:hover{
     width: 500px;
     display: flex;
     flex-direction: column;
-    box-shadow: 5px 5px 10px rgb(2, 223, 193); 
+    box-shadow: 5px 5px 10px #000000;
     border: none;
 }
+
+
 
 .login h2{
     position: relative;
@@ -137,8 +139,8 @@ nav li a:hover{
 }
 .login .boxdeinput input:focus-visible{
     outline: 3px;
-    box-shadow: 0 0 5px 0 #01E7B8 inset,
-                0 0 5px 2px #01E7B8;
+    box-shadow: 0 0 5px 0 #0e00d5 inset,
+                0 0 5px 2px #0e00d5;
    
 }
  .btnlogin{
@@ -146,8 +148,8 @@ nav li a:hover{
     align-items: center;
     border:none;
     border-radius: 200px;
-    color:#0c071b;
-    background-color: #01E7B8;
+    color:#ffffff;
+    background-color: #0e00d5;
     font-weight:bold;
     padding: 10px 30px;
     cursor: pointer;
@@ -158,8 +160,8 @@ nav li a:hover{
 
 .btnlogin:hover{
     background-color: transparent;
-    border: 2px solid #01E7B8;
+    border: 2px solid #0e00d5;
     color:#ffff;
-    box-shadow: 0 0 10px #01E7B8 inset,
-                0 0 10px 4px #01E7B8;
+    box-shadow: 0 0 10px #0e00d5 inset,
+                0 0 10px 4px #0e00d5;
 }
