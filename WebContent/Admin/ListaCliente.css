@@ -1,0 +1,101 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,500;1,300;1,500&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: 0;
+    font-family: 'Poppins', sans-serif;
+}
+form{
+	align-items: center;
+	justify-content: center;
+}
+body{
+    background-color: #06040e;
+}
+
+/*cabeçalho*/
+nav{
+    background-color: #110631;
+    height: 80px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav ul{
+    display: flex;
+    align-items: center;
+    list-style: none;
+    padding: 10px;
+}
+nav li{
+    margin-left: 7px;
+}
+nav li a{
+    color:#ffff;
+    font-weight:450;
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: 500px;
+    padding: 8px 15px;
+    border-radius: 10px;
+    transition: 0.3ms;
+    border:none;
+}
+nav li a:hover{
+    
+    background-color: #0052D5;
+    color:#ffff;
+    box-shadow: 0 0 10px #0e00d5 inset,
+                0 0 10px 4px #0e00d5;
+    
+}
+.logo{
+    width: 6%;
+    margin-left: 1%;
+}
+/* Fim do cabeçalho*/
+
+
+
+.titulo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color:#ffffff; 
+    margin-top: 3%;
+}
+/* Bloco da tabela/*/
+
+.blocotabela{
+    margin-top: 2%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    
+}
+
+table{
+    border-spacing: 3px;
+    text-align: center;
+    padding: 10px;  
+    margin-top: 2%;
+    font-weight: bold;
+    border-radius: 10px;
+    background: rgba(255,255,255,0.25);
+    backdrop-filter: blur(15px);
+    color:#000000;
+}
+
+th, td{
+    border-spacing: 3px;
+    text-align: center;
+    padding: 10px;  
+    margin-top: 2%;
+    border: 1px solid;
+    font-weight: bold;
+    border-radius: 10px;
+    background-color: #ffffff;
+}

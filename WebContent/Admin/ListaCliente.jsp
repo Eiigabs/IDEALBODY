@@ -7,12 +7,25 @@
 <html>
 <head>
 <meta charset="UTF-8">
+<link  rel ="stylesheet" href="ListaCliente.css">
+ <link  rel="shortcut icon" href="imagensib/iconib.ico" type="image/icon">
 <title>IdealBody - Clientes</title>
 </head>
 <body>
+<nav>
+
+		<img  class="logo" src="imagensib/logosemfundoofc.png"/>
+
 	<ul>
-   		<li> <a href="http://localhost:8080/IdealBody/Admin/EspacoAdmin.html"> VOLTAR </a> </li>
-    </ul>
+		<li> <a href="#"> VOLTAR </a> </li>
+		
+	</ul>
+</nav>
+
+	<section class="titulo">
+
+		<h1> Listagem de Clientes </h1>
+	</section>
 
 <form action="#" name="formCliente" id="formCliente" method="POST"> 
 
