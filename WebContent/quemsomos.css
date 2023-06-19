@@ -1,0 +1,243 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,500;1,300;1,500&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: 0;
+    font-family: 'Poppins', sans-serif;
+}
+
+body{
+    background-color: #06040e;
+    height: 100vh;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.bannerprincipal{
+    background-image: url('imagensib/fundoquemsomos.jpg');
+    height: 100vh;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+
+   
+}
+
+nav{
+    
+    height: 80px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-align: right;
+}
+
+nav ul{
+    display: flex;
+    align-items: center;
+    list-style: none;
+    padding: 10px;
+}
+nav li{
+    margin-left: 7px;
+}
+nav li a{
+    color:#ffff;
+    font-weight:450;
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: 500px;
+    padding: 8px 15px;
+    border-radius: 10px;
+    transition: 0.3ms;
+}
+nav li a:hover{
+    background-color: transparent;
+    /*background-color: #0052D5;*/
+    color:#ffff;
+    box-shadow: 0 0 10px 0 #0052D5 inset,
+    0 0 10px 4px #0052D5;
+    
+}
+
+.logo{
+    width: 10%;
+    margin-top: 2%;
+    margin-left: 1%;
+}
+
+
+
+.blocotexto1{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50%;
+}
+.text1{
+    margin-left: 10% ;
+    display:flex;
+    margin-top: 20%;
+    font-weight: 500;
+    font-size: 30px;
+    color: #ffff;
+}
+
+
+.bloco1{
+    display: flex;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 5%;
+    flex-direction: column;
+}
+.bannerb1{
+    margin-top: 2%;
+    width: 70%;
+    display:flex;
+    background-image: url('imagensib/b2.jpg');
+    border-radius: 10px;
+    height: 80vh;
+    background-size: cover;
+    background-position: center;
+  
+}
+
+
+.blocotexto2{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(25px);
+}
+.text2{
+    display:flex;
+    font-weight: 500;
+    font-size: 25px;
+    color: #ffff;
+   
+}
+.blocodosperfis {
+    display: flex;
+    margin-top: 5%;
+    justify-content:space-around;
+    align-items: center;
+    
+    }
+    .card{
+        display: flex;
+        background-color: #ffffff;
+        width: 32%;
+        border-radius: 20px;
+        margin-bottom: 5%;
+        border:none;
+        margin-left: 2%;
+        margin-right: 2%;
+        flex-direction: column;
+        
+       
+        
+    }
+    /* Lado da imagem dos cards */
+    .ladoimg{ 
+        width: 100%;
+        height: 50%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        overflow: hidden;
+        border-radius: 10px;
+    
+    }
+    .ladoimg:hover img{
+        -webkit-transform: scale(1.1);
+        transform: scale(1.2);
+     }
+    .card img{
+        max-width: 100%;
+        border-radius: 15px;
+        -webkit-transition: -webkit-transform .5s ease;
+        transition: transform .5s ease;
+    }
+    
+    /* Lado da descrição do plano*/
+    .ladodesc{
+        height: 50%;
+        height: 50%;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        text-align: center;
+        flex-direction: column;
+    
+    }
+    /* Titulo do plano */
+    .card h2{
+        position: relative;
+        width: 100%;
+        text-align: center; 
+        font-size: 30px; 
+        font-weight: 300; 
+        margin-bottom: 1%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+       
+    }
+
+    .citacao{
+        font-size: 15px; 
+        font-style: italic;
+        margin-top: 2%;
+        margin-bottom: 2%;
+        font-weight: 600; 
+    }
+    
+    .redes{
+        display: flex;
+        align-items:center;
+        justify-content: center;
+        text-align: center;
+       
+    }
+    /* configuração dos ícones*/
+    .icones {
+        width: 25%;
+        margin-bottom: 3%;
+    }
+    .icones:hover{
+        transform:scale(1.1);
+        cursor:pointer;
+        transition: transform .5s ease;
+    }
+
+    .titulobloco2{
+
+        display:flex;
+        color:#ffffff;
+        text-align: center;
+        justify-content: center;
+        align-items: center;
+        margin-top: 2%;
+    
+    }
+
+    .textorodape{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        color: #fff;
+        font-weight: 500;
+        font-size: 20px;
+      
+    }
+    
+    .textorodape p{
+        margin-bottom: 3%;
+    }
