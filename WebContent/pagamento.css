@@ -1,0 +1,400 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,500;1,300;1,500&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: 0;
+    font-family: 'Poppins', sans-serif;
+}
+body{
+    background-color: rgb(11, 10, 17);
+   
+    } 
+
+
+/*Cabeçalho*/
+nav{
+    
+    height: 80px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-align: right;
+}
+
+nav ul{
+    display: flex;
+    align-items: center;
+    list-style: none;
+    padding: 10px;
+}
+nav li{
+    margin-left: 7px;
+}
+nav li a{
+    color:#ffff;
+    font-weight:450;
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: 500px;
+    padding: 8px 15px;
+    border-radius: 10px;
+    transition: 0.3ms;
+}
+
+nav li a:hover{
+    background-color: transparent;
+    /*background-color: #0052D5;*/
+    color:#ffff;
+    box-shadow: 0 0 10px #0e00d5 inset,
+                0 0 10px 4px #0e00d5;
+    
+}
+
+.logo{
+    width: 10%;
+    margin-top: 2%;
+    margin-left: 1%;
+}
+/* Fim do cabeçalho*/
+
+
+.blocodosplanos{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-left: 8%;
+  
+
+}
+/* Configuração dos cards dos planos */
+
+.orgcard{
+    flex-direction: column;
+    display: flex;
+    width: 50%;
+    justify-content: center;
+    align-items: center;
+}
+.card{
+
+    display: flex;
+    background-color: #ffffff;
+    width: 50%;
+    height: 50%;
+    border-radius: 13px;
+    margin-bottom: 2%;
+    border:none;
+    margin-left: 2%;
+    margin-right: 2%;
+   
+    
+}
+.card:hover{
+    cursor: pointer;
+}
+/* Lado da imagem dos cards */
+.ladoimg{ 
+
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+
+}
+
+
+.ladoimg:hover img{
+    -webkit-transform: scale(1.1);
+    transform: scale(1.2);
+ }
+.card img{
+    max-width: 200%;
+    border-radius: 15px;
+    -webkit-transition: -webkit-transform .5s ease;
+    transition: transform .5s ease;
+}
+
+/* Lado da descrição do plano*/
+.ladodesc{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    flex-direction: column;
+}
+/* Titulo do plano */
+.card h2{
+    position: relative;
+    width: 100%;
+    text-align: center; 
+    font-size: 2.5em; 
+    font-weight: 600; 
+    margin-bottom: 1%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+   
+}
+/* Cor dos titulos dos planos*/
+.b{
+    color:#0fcf96; 
+   font-size: 35px;
+  font-weight: bold;
+}
+.g{
+    color:#FFBE00;
+    font-size: 35px;
+    font-weight: bold;
+}
+.p{
+    color:#5858589f;
+    font-size: 35px;
+    font-weight: bold;
+}
+/* Cor dos preços dos planos*/
+.precob{
+    color:#0fcf96; 
+    margin-bottom: 5%;
+    font-size: 35px;
+    font-weight: 600;
+}
+.precog{
+    color:#FFBE00;
+    margin-bottom: 5%;
+    font-size: 35px;
+    font-weight: 600;
+   
+}
+.precop{
+    color:#5858589f;
+    margin-bottom: 5%;
+    font-size: 35px;
+    font-weight: 600;
+}
+
+/* Botao de contratar os planos */
+.botaovalor{
+    background-color:#0052D5;
+    color:#ffff;
+    border-radius:15px;
+    padding: 5px 20px;
+    font-size:50;
+    font-weight: bold;
+    border: none;
+}
+.botaovalor:hover{
+    background-color: #041022;
+    color:#ffff;
+    cursor: pointer;
+    
+}
+
+/* Fim do bloco dos planos */
+.blocopag{
+    justify-content: center;
+    display: flex;
+   
+}
+.cardpg{
+    position: relative;
+   padding: 70px;
+    background: rgba(32, 27, 27, 0.774);
+    backdrop-filter: blur(15px);
+    border: 1px solid #fff;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.678); border-right: 1px solid rgba(255, 255, 255, 0.699); border-radius: 20px;
+    width: 45%;
+    display: flex;
+    flex-direction: column;
+    box-shadow: 1px 1px 6px #000000;
+    border: none;
+    margin-bottom: 5%;
+    margin-top: 6%;
+
+}
+
+.cima{
+    display: flex;
+    justify-content: space-around;
+}
+.tit{
+    position: relative;
+    width: 100%;
+    text-align: center; 
+    font-size:40px; 
+    font-weight: 600; 
+    margin-bottom: 2rem;
+    display: flex;
+    justify-content: space-between;
+    color:#ffffff; 
+}
+
+.band{
+    width: 33%;
+}
+.ifn input{
+
+    width: 90%;
+}
+.cardpg .boxdeinput input {
+    position: relative;
+    border-radius: 25px;
+    border: none;
+    margin-bottom: 30px;
+    width: 100%;
+}
+
+
+.cardpg .boxdeinput input:hover{
+    background-color: #ffffff;
+    border:none;
+}
+.cardpg .boxdeinput input:focus-visible{
+    outline: 3px solid #01E7B8;
+   
+}
+ .btnlogin{
+    display: flex;
+    align-items: center;
+    border:none;
+    border-radius: 200px;
+    color:#0c071b;
+    background-color: #01E7B8;
+    font-weight:bold;
+    padding: 10px 30px;
+    cursor: pointer;
+    position: relative;
+    text-align: center; 
+    
+}
+
+.btnlogin:hover{
+    background-color: transparent;
+    border: 2px solid #0052d5;
+    color:#ffff;
+    box-shadow: 0 0 10px 0 #0052d5 inset,
+                0 0 10px 4px #0052d5;
+}
+
+
+
+.inputbox{
+    display: flex;
+    margin-bottom: 1.1rem;
+    justify-content: space-between;
+}
+.inputboxc{
+    display: flex;
+    margin-bottom: 1.1rem;
+    justify-content: space-between;
+}
+.ifn{
+    display: flex;
+    flex-direction: column;
+}
+
+
+.inputboxc input{
+    margin: 0.6rem;
+    padding: 0.8rem 1.2rem;
+    border:none;
+    border-radius: 10px;
+    box-shadow: 1px 1px 6px #000000;
+}
+.inputbox input{
+    margin: 0.6rem;
+    padding: 0.8rem 1.2rem;
+    border:none;
+    border-radius: 10px;
+    box-shadow: 1px 1px 6px #000000;
+}
+
+.inputboxc input:hover{
+    background-color: #ffffff;
+    border:none;
+}
+.inputbox input:hover{
+    background-color: #ffffff;
+    border:none;
+}
+.inputbox input:focus-visible{
+    outline: 3px solid #0052D5;
+    box-shadow: 0 0 5px 0 #0052D5 inset,
+                0 0 5px 2px #0052D5;
+}
+.inputboxc input:focus-visible{
+    outline: 3px solid #0052D5;
+    box-shadow: 0 0 5px 0 #0052D5 inset,
+                0 0 5px 2px #0052D5;
+}
+
+.inputbox label{
+    color: #fff;
+}
+
+.inputboxc label{
+    color: #fff;
+}
+
+ .botaocontinuar{
+    align-items: center;
+    text-align: center;
+ }
+ .botaocontinuar button{
+    width: 50%;
+    border:none;
+    border-radius: 200px;
+    color:#fffdfd;
+    background-color: #0052D5;
+    font-weight:bold;
+    padding: 10px 50px;
+    cursor: pointer;
+    margin-top: 0.9rem;
+ }
+ .botaocontinuar button:hover{
+    background-color: transparent;
+    border: 2px solid #01E7B8;
+    color:#ffff;
+    box-shadow: 0 0 10px 0 #0052D5 inset,
+    0 0 10px 4px #0052D5;
+}
+
+
+.escl{
+    display: flex;
+    justify-content: space-around;
+}
+
+.bcart{
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    color:#fff;
+}
+.selec{
+    display: flex;
+    margin: 0.6rem;
+    padding: 0.8rem 1.2rem;
+    border:none;
+    border-radius: 10px;
+    box-shadow: 1px 1px 6px #000000;
+}
+.selec:hover{
+    cursor: pointer;
+}
+
+.lic{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color:#fff;
+    margin-top: 2%;
+    margin-bottom: 2%;
+}
+.lic input:hover{
+    cursor: pointer;
+}
