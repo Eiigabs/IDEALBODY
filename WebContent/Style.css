@@ -5,6 +5,10 @@
     box-sizing: 0;
     font-family: 'Poppins', sans-serif;
 }
+a{
+	color: white;
+	text-decoration: none;
+}
 body{
     background-color: #06040e;
 
@@ -141,9 +145,6 @@ nav li a:hover{
     justify-content: center;
     flex-direction: column;
 }
-
-
-
 .slider-container {
 
     width: 900px;
@@ -526,6 +527,5 @@ footer{
     transition: transform .5s ease;
 }
 /* Fim do rodapé*/
-
 
 

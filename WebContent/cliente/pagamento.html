@@ -1,0 +1,199 @@
+
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link  rel ="stylesheet" href="pagamento.css">
+    <link  rel="shortcut icon" href="imagensib/iconib.ico" typr="image/icon">
+    <title>Pagamento</title>
+</head>
+<body>
+
+    <nav>
+        <!-- Cabeçalho -->
+           <img  class="logo" src="imagensib/logosemfundoofc.png">
+
+       <ul>
+           <li> <a href="#"> INÍCIO </a> </li>
+          </ul>
+   </nav>
+	
+
+   <section class="blocodosplanos">
+
+
+    <!--Fim dos cards dos planos -->
+
+
+    <div class="cardpg">
+        <form name = "Pagamento" action="RespostaPagamento.jsp" method = "post">
+    
+            <div class="cima"> 
+            <h2 class="tit"> Pagamento </h2>
+            <h4 > Dados do Cartão </h4>
+    
+            <img class="band"src="imagensib/bandeirascart.png">
+        </div>
+            <div class="inputboxc">
+    
+                <div class="ifn"> 
+                <label for="firstname"> Nome do Titular </label>
+                <input  id="firstname" type="text" name="firstname" placeholder="Nome no cartão" required>
+            </div>
+            <div class="ifn"> 
+                <label for="idc"> ID Cliente </label>
+				<input type="hidden" name="hidCliente" id="hidCliente" value="1">
+            </div>
+            </div>
+    
+            
+            <div class="inputboxc">
+
+                <div class="ifn"> 
+                    <label for="cpf">  CPF do Titular </label>
+                    <input id="cpf" type="text" name="cpf" placeholder="___.___.___-__" required>
+                        
+                </div>
+                <div class="ifn"> 
+                    <label for="nmrcart"> Número do Cartão</label>
+                    <input id="nmrcart" type="number" name="nmrcart" placeholder="N Cartão" required>
+        
+                </div>
+              
+
+            </div>
+        
+            <div class="inputboxc">
+    
+                <div class="ifn"> 
+                <label for="dat"> Vencimento </label>
+                <input id="dat" type="text" name="dat" placeholder="__/_____" required>
+                </div>
+    
+                <div class="ifn"> 
+                    <label for="cvc"> CVC </label>
+                    <input id="cvc" type="number" name="cvc" placeholder="" required>
+                </div>
+    
+    
+            </div>
+    
+                <div class="escl"> 
+                   <div class="bcart"> 
+                    <label for="plan"> Plano </label>
+                        <select class="selec" name="Planos">
+                            <option value="1">BASIC</option>
+                            <option value="2">GOLD</option>
+                            <option value="3">PREMIUM</option>
+                     </select>
+
+
+                     
+                    </div>
+                    <div class="bcart"> 
+                        <label for="uni"> Unidade de Cobrança </label>
+                        <select class="selec" name="Unidade">
+                            <option value="5">Guamá-Formosa</option>
+                            <option value="6"> Marco-Tv.Estrela</option>
+                            <option value="7">Nazaré-Av.Nazaré</option>
+                            <option value="8">Shopping Metrópole Ananindeua-BR 316</option>
+                            <option value="9">Parque Shopping-Av.Augusto Montenegro</option>
+                     </select>
+
+
+                     
+                    </div>
+                </div>
+
+                <diV class="lic">
+
+                    <input type="checkbox" name="conc" value="concordo"><p>  Li e concordo com os Termos</p>
+
+                </diV>
+                        
+                
+                       <div class="botaocontinuar">
+                                <button><a href="#"></a> Concluir </button>    
+                            
+                         </div>
+
+</form>           
+</div>
+    <div class="orgcard"> 
+        <div class="card">
+            
+            <div class="ladodesc">
+                <details> 
+                    <summary class="b"> BASIC </summary>
+                 <dd> ACADEMIA ÚNICA</dd>
+                 <dd> IB+ App </dd>
+                 <div class="ladopreco"> 
+                    <dd class="precob"> 79,90 </dd>
+           
+                   </div>
+               
+                </details>
+           
+            </div>
+            
+    
+        </diV>
+        <div class="card">
+            
+            <div class="ladodesc">
+                <details> 
+                    <summary class="g"> GOLD </summary>
+                    <dd> IDEAL SUPLEMENTS </dd>
+                    <dd> TODAS AS UNIDADES </dd>
+                    <dd> IB+ App </dd>
+                 <div class="ladopreco"> 
+                    <dd class="precog"> 129,90 </dd>
+           
+                   </div>
+               
+                </details>
+           
+            </div>
+            
+    
+        </diV>
+        <div class="card">
+            
+            <div class="ladodesc">
+                <details> 
+                    <summary class="p"> PREMIUM </summary>
+                    <dd> ACOMPANHAMENTO NUTRICIONAL</dd>
+                    <dd> IDEAL SUPLEMENTS </dd>
+                    <dd> TODAS AS UNIDADES </dd>
+                    <dd> IB+ App </dd>
+                 <div class="ladopreco"> 
+                    <dd class="precop"> 179,90 </dd>
+           
+                   </div>
+               
+                </details>
+           
+            </div>
+            
+    
+        </diV>
+    </diV>
+
+       
+
+    
+</section>
+
+<section class="blocopag">
+
+
+
+
+
+</section>
+
+    
+
+</body>
+</html>

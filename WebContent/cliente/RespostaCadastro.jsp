@@ -21,7 +21,6 @@
 	cliente1.setData(request.getParameter("dat"));
 	cliente1.setTelefone(request.getParameter("number"));
 	cliente1.setEmail(request.getParameter("email"));
-	cliente1.setGenero(request.getParameter("genero"));
 	cliente1.setSenha(request.getParameter("password"));
 	
 	clienteDao cliente = new clienteDao();
@@ -29,7 +28,11 @@
 	cliente.InserirCliente(cliente1);
 	
 	%>
-	<h1>Obrigado pelo seu cadastro</h1>
+	 <script language="JavaScript">
+		 alert('obrigado pelo seu cadastro');
+           window.location.href="http://localhost:8080/IdealBody/cliente/pagamento.jsp";
+       		
+       </script>
 	<br>
 	
 	

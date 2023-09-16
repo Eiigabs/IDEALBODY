@@ -7,7 +7,6 @@ public class Cliente{
 	private String data;
 	private String telefone;
 	private String email;
-	private String genero;
 	private String senha;
 	
 	public int getId_cliente() {
@@ -46,12 +45,6 @@ public class Cliente{
 	}
 	public void setEmail(String email) {
 		this.email = email;
-	}
-	public String getGenero() {
-		return genero;
-	}
-	public void setGenero(String genero) {
-		this.genero = genero;
 	}
 	public String getSenha() {
 		return senha;

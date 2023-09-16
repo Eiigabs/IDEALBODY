@@ -4,6 +4,8 @@ import java.sql.ResultSet;
 import java.sql.SQLException;
 import java.util.ArrayList;
 import Model.Cliente;
+import Model.Pagamento;
+import Model.Unidades;
 import Util.Conexao;
 
 public class clienteDao {
@@ -18,7 +20,6 @@ public class clienteDao {
 				 + c.getData()+ "','"
 				 + c.getTelefone() + "','"
 				 + c.getEmail() + "','"
-				 + c.getGenero() + "','"
 				 + c.getSenha() + "');");
 			return true;
 		}catch(SQLException e ){
@@ -27,6 +28,27 @@ public class clienteDao {
 		}
 		
 	}
+	public boolean InserirPagamento(Pagamento c){
+		Conexao con = null;
+		try{
+			con = new Conexao();
+			con.executeUpdate("INSERT INTO pagamento(cliente, nome_titular, cpf_titular, num_cartao, vencimento_cartao, cvc, plano, unidade) VALUES ('"
+				 + c.getCliente() + "','"
+				 + c.getNome_titular() + "','"
+				 + c.getCpf_titutar()+ "','"
+				 + c.getNum_cartao() + "','"
+				 + c.getVencimento_cartao() + "','"
+				 + c.getCvc() + "','"
+				 + c.getPlano() + "','"
+				 + c.getUnidade() + "');");
+			return true;
+		}catch(SQLException e ){
+			System.out.println("ERRO AO INSERIR PAGAMENTO");
+			return false;
+		}
+		
+	}
+	
 	
 	public ArrayList<Cliente> ArrayListaCliente(){
 		Conexao con = null;
@@ -44,7 +66,6 @@ public class clienteDao {
 				cliente.setData(result.getString("data_nascimento"));
 				cliente.setTelefone(result.getString("telefone"));
 				cliente.setEmail(result.getString("email"));
-				cliente.setGenero(result.getString("genero"));
 				listarCliente.add(i, cliente);
 				i++;
 			}
@@ -59,27 +80,17 @@ public class clienteDao {
 		 Conexao con = null;
 		 try {
 			 con = new Conexao();
-	           
-	            // Preparar a consulta SQL
-	        	 
-	            String consulta = "SELECT COUNT(*) FROM cliente WHERE cpf = '" + nomeUsuario + "' AND senha = '" + senha + "'";
-	            
-	            // Executar a consulta
+	       
+			 String consulta = "SELECT COUNT(*) FROM cliente WHERE cpf = '" + nomeUsuario + "' AND senha = '" + senha + "'";
+	        
 	            
 	            ResultSet rs = con.executeQuery(consulta);
-
-	            // Verificar se o usuário existe no banco de dados
 	            rs.next();
 	            int count = rs.getInt(1);
-
-	          
-	            // Retornar true se o usuário existe e a senha está correta
 	            return count == 1;
 	        } catch (SQLException e) {
 	        	System.out.println("Erro na funcao verificarLogin DAO");
 	        }
-
-	        // Em caso de erro ou se o usuário não existe, retornar false
 	        return false;
 	    }
 	
@@ -93,7 +104,6 @@ public class clienteDao {
 			+ " data_nascimento= '" + c.getData()+"', "
 			+ " telefone= '" + c.getTelefone()+"', "
 			+ " email= '" + c.getEmail()+"', "
-			+ " genero= '" + c.getGenero()+"' "
 			+ " WHERE id_cliente = " + c.getId_cliente());
 			return true;
 			}catch(SQLException e){
@@ -115,8 +125,6 @@ public class clienteDao {
 			cliente.setData(result.getString("data_nascimento"));
 			cliente.setTelefone(result.getString("telefone"));
 			cliente.setEmail(result.getString("email"));
-			cliente.setGenero(result.getString("genero"));
-		
 				return cliente;
 			}catch(SQLException e){
 				System.out.println("ERRO" + e);
@@ -139,5 +147,44 @@ public class clienteDao {
 		
 		}
 	
+		public String BoasVindasCliente(int cliente){
+			String nomeCliente = null;
+			Conexao con = null;
+				try{
+					con = new Conexao();
+					ResultSet result = con.executeQuery("SELECT nome FROM cliente WHERE id_cliente = " + cliente);  	
+					result.next();
+					nomeCliente = result.getString("nome");
+				
+			   }catch(SQLException e){
+				System.out.println("ERRO" + e);
+			
+			   }
+		return nomeCliente;
+		}
+		
+		public ArrayList<Unidades> ArrayListaUnidade(){
+			Conexao con = null;
+			try {
+				con = new Conexao();
+				ResultSet result = con.executeQuery("SELECT * FROM unidades;");
+				ArrayList<Unidades> listarUnidades = new ArrayList<Unidades>();
+				int i = 0;
+				
+				while(result.next()) {
+					Unidades unidade = new Unidades();
+					unidade.setId_unidades(result.getInt("id_unidades"));
+					unidade.setNome_unidade(result.getString("nome_unidade"));
+					unidade.setEndereco(result.getString("endereco"));
+					listarUnidades.add(i, unidade);
+					i++;
+				}
+				return listarUnidades;
+			}catch (SQLException e) {
+				System.out.println("Erro na função listar Unidades DAO" + e);
+				return null;
+			}
+		}
+		
 
 }

@@ -10,6 +10,7 @@
 <link  rel ="stylesheet" href="ListaCliente.css">
  <link  rel="shortcut icon" href="imagensib/iconib.ico" type="image/icon">
 <title>IdealBody - Clientes</title>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.0/font/bootstrap-icons.css">
 </head>
 <body>
 <nav>
@@ -17,7 +18,7 @@
 		<img  class="logo" src="imagensib/logosemfundoofc.png"/>
 
 	<ul>
-		<li> <a href="#"> VOLTAR </a> </li>
+		<li> <a href="http://localhost:8080/IdealBody/Admin/EspacoAdmin.html"> VOLTAR </a> </li>
 		
 	</ul>
 </nav>
@@ -26,7 +27,7 @@
 
 		<h1> Listagem de Clientes </h1>
 	</section>
-
+	<section class="blocotabela">
 <form action="#" name="formCliente" id="formCliente" method="POST"> 
 
 <table border="1px">
@@ -37,7 +38,6 @@
 <th> data de <br>nascimento </th> 
 <th> Telefone </th>
 <th> Email </th> 
-<th> Genero </th>
 <th> Editar </th>
 <th> Deletar </th>
 </tr>
@@ -52,15 +52,15 @@ for(Cliente c: cliente){%>
 		<td><%= c.getData() %></td>
 		<td><%= c.getTelefone() %></td>
 		<td><%= c.getEmail() %></td>
-		<td><%= c.getGenero() %></td>
 		
-		<td> <a href="AlterarCliente.jsp?idcliente=<%=c.getId_cliente()%>"> <img src="imagensib/edit.png" width="18px" height="18px"> </a></td>
-		<td> <a href="RespostaDeletarCliente.jsp?idcliente=<%=c.getId_cliente()%>"><img src="imagensib/delete.png" width="18px" height="18px"> </a></td>
+		<td> <a href="AlterarCliente.jsp?idcliente=<%=c.getId_cliente()%>"> <i class="bi bi-pencil-square"></i></a></td>
+		<td> <a href="RespostaDeletarCliente.jsp?idcliente=<%=c.getId_cliente()%>"><i class="bi bi-trash"></i> </a></td>
 	</tr>
 <%} %>
 </table>
 
 </form>
+</section>
 
 </body>
 </html>

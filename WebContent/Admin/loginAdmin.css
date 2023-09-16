@@ -74,7 +74,7 @@ nav li a:hover{
 /* Fim do cabeçalho*/
 
 .bannerprincipal{
-    background-image: url('imagensib/fundologinadmin.jpg');
+    background-image:url('imagensib/fundologinadmin.jpg');
     height: 100vh;
     background-size: cover;
     background-position: center;
@@ -82,7 +82,6 @@ nav li a:hover{
   
    
 }
-
 .login{
     position: relative;
     display: flex;

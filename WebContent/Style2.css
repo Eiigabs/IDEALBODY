@@ -1,0 +1,177 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,500;1,300;1,500&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: 0;
+    font-family: 'Poppins', sans-serif;
+}
+a{
+	color: white;
+	text-decoration: none;
+}
+body{
+    background-color: #06040e;
+
+    } 
+
+
+/*Cabeçalho*/
+nav.superior{
+    height: 80px;
+    display: flex;
+    box-shadow: 10px 10px 100px #000040;
+    justify-content: space-between;
+    align-items: center;
+    text-align: right;
+
+}
+
+nav.superior ul{
+    display: flex;
+    align-items: center;
+    list-style: none;
+    padding: 10px;
+    
+}
+nav.superior li{
+    margin-left: 7px;
+    
+}
+nav.superior li a{
+    color:#ffff;
+    font-weight:450;
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: 500px;
+    padding: 8px 15px;
+    border-radius: 10px;
+    transition: 0.3ms;
+}
+
+nav.lateral{
+	background-color: #06040e;
+    width: 300px;
+    height: 100%;
+    padding: 40px 0 40px 1%;
+    box-shadow: 3px 0 0 #000040;
+    position: fixed;
+    top: 0;
+    bottom: 50px;
+    
+}
+nav li a{
+    color:#ffff;
+    font-weight:450;
+    font-size: 18px;
+    font-weight: 500px;
+    padding: 8px 15px;
+    border-radius: 10px;
+    transition: 0.3ms;
+}
+
+nav li a:hover{
+    background-color: transparent;
+    /*background-color: #0052D5;*/
+    color:#ffff;
+    box-shadow: 0 0 10px #0e00d5 inset,
+                0 0 10px 4px #0e00d5;
+    
+}
+.bttexpandir{
+	 width: 100%;
+	 padding-left: 1px;
+	
+}
+.bttexpandir i{
+	color: #ffff;
+	font-size: 30px;
+	cursor: pointer;
+	
+}
+.logo{
+    width: 6%;
+    margin-top: 1%;
+    margin-left: 3%;
+}
+.logo2{
+    width: 30%;
+    align-items: left;
+  
+}
+ul li.item-menu{
+	padding: 20px 4 px;
+	display: flex;
+	font-size: 30px;
+}
+ul li.item-menu a .txt-link{
+	margin-left: 20px;
+	font-size: 25px;
+}
+
+
+/* Fim do cabeçalho*/
+
+
+  
+
+
+
+/*  Rodapé */
+footer{
+  margin-top: 70%;
+  background-color: #000040;
+  align-items:center;
+  justify-content: center;
+ 
+}
+
+
+.textorodape{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: #fff;
+    font-weight: 200;
+    font-size: 20px;
+  
+}
+
+.textorodape p{
+    margin-bottom: 3%;
+}
+
+.textorodape:hover{
+    cursor: pointer;
+}
+
+/* Logo do rodapé*/
+.imgrodape{
+    display: flex;
+    align-items:center;
+    justify-content: center;
+    text-align: center;
+    
+   
+   
+    
+}
+.imgrodape img{
+    width: 15%;
+    margin-top: 1%;
+    margin-bottom: 1%;
+}
+
+/* configuração dos ícones*/
+.icones{
+    width: 6%;
+    margin-bottom: 3%;
+}
+.icones:hover{
+    transform:scale(1.1);
+    cursor:pointer;
+    transition: transform .5s ease;
+}
+/* Fim do rodapé*/
+
+

@@ -25,8 +25,13 @@
         }else{
             System.out.println("Dados de login incorretos!");
             %>  
-            <h1>LOGIN ERRADO</h1>  
-            <%
+            
+            <script language="JavaScript">
+   			alert('Dados de login incorretos');
+            window.location.href="http://localhost:8080/IdealBody/cliente/login.html";
+          		
+          </script>
+         <%
         }
     		
 		}catch(Exception e){
