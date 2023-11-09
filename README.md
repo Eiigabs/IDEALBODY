@@ -1,3 +1,4 @@
+<img src="/">
 # Projeto IDEALBODY - A Academia Ideal para seu Corpo Ideal
 
 Bem-vindo ao repositório do projeto IDEALBODY - A Academia Ideal para seu Corpo Ideal! Este projeto foi desenvolvido como parte de um projeto integrador e tem como objetivo criar um sistema de academia inovador, que atenda às necessidades de pessoas com pouco tempo disponível para treinar. O diferencial deste projeto é a possibilidade de acessar seus treinos por meio de um aplicativo.
