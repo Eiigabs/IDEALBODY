@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link  rel ="stylesheet" href="loginAdmin.css">
+        <link  rel="shortcut icon" href="imagensib/iconib.ico" type="image/icon">
+        <title>IdealBody - Administrativo</title>
+    </head>
+    <body>
+  
+        <section class="bannerprincipal">
+
+			<nav>
+
+       			 <img  class="logo" src="imagensib/logosemfundoofc.png">
+
+    			<ul>
+        			<li> <a href="http://localhost:8080/IdealBody/paginaInicial.html"> INÍCIO </a> </li>
+        			
+   				</ul>
+			</nav>
+            
+        <div class="login">       
+                
+			<div class="containerdelogin">
+                <!--  Início do formulário -->
+                    <form name="login" action="RespostaLoginAdmin.jsp" method = "post"> 
+                        <h2> Entre </h2>
+                            <div class="boxdeinput">
+                            <label for="usuario"> Usuário </label>
+                            <input id="usuario" type="text" name="usuario" placeholder="Usuário">
+                            </div>
+                            <div class="boxdeinput">
+                            <label for="senha"> Senha </label>
+                            <input id="senha" type="password" name="senha" placeholder="Senha">
+                            </div>
+                            
+                           
+                             <button class="btnlogin"> Entrar </button>
+                           
+                     </form>
+                  <!--  Fim do formulário -->         
+			</div>
+        </div>
+        </section>
+</body>
+</html>

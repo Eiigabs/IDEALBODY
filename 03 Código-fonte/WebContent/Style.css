@@ -1,0 +1,525 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,500;1,300;1,500&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: 0;
+    font-family: 'Poppins', sans-serif;
+}
+a{
+	color: white;
+	text-decoration: none;
+}
+body{
+    background-color: #06040e;
+
+    } 
+
+
+/*Cabeçalho*/
+nav{
+    
+    height: 80px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-align: right;
+}
+
+nav ul{
+    display: flex;
+    align-items: center;
+    list-style: none;
+    padding: 10px;
+}
+nav li{
+    margin-left: 7px;
+}
+nav li a{
+    color:#ffff;
+    font-weight:450;
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: 500px;
+    padding: 8px 15px;
+    border-radius: 10px;
+    transition: 0.3ms;
+}
+nav li a:hover{
+    background-color: transparent;
+    /*background-color: #0052D5;*/
+    color:#ffff;
+    box-shadow: 0 0 10px #0e00d5 inset,
+                0 0 10px 4px #0e00d5;
+ }
+.logo{
+    width: 10%;
+    margin-top: 2%;
+    margin-left: 1%;
+}
+/* Fim do cabeçalho*/
+
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+   
+  }
+  
+  .dropbtn {
+    padding: 10px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+    background-color: transparent;
+    color:#ffff;
+    font-weight:500;
+    font-size: 18px;
+  }
+  .dropbtn:hover{
+   
+  }
+  
+  .dropdown-content {
+    text-align: center;
+    display: none;
+    position: absolute;
+    border-radius: 10px;
+    background-color: #212B38;
+    z-index: 1;
+  }
+  
+  .dropdown-content a {
+    color: #ffffff;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+   
+  
+  }
+  
+  .dropdown:hover .dropdown-content {
+    display: block;
+  }
+
+/* Bloco principal */
+/* Banner de fundo do bloco principal */
+.bannerprincipal{
+    background-image: url('imagensib/fundoinicial.jpg');
+    height: 100vh;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+   
+   
+}
+/* Textos do banner de fundo do bloco principal */
+.texto1{
+    color:#ffff;
+    margin-left: 10%;
+    margin-top: 10%;
+    display: flex;
+    flex-direction: column;
+}
+
+.texto1 .titulo{
+    font-size: 50px;
+    font-weight: 500;
+    display: flex;
+}
+.texto1 .subtitulo{
+    font-size: 30px;
+    font-weight: 300;
+    display: flex;
+
+}
+
+/* Fim do bloco principal */
+
+
+.blocoslides{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+.slider-container {
+
+    width: 900px;
+    height: 450px;
+    overflow: hidden;
+    position: relative;
+    border-radius: 10px;
+    margin-top: 5%;
+    margin-bottom: 2%;
+}
+
+.slider-content {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+}
+
+.slide {
+    max-width: 100%;
+    flex-shrink: 0;
+}
+
+.slide img {
+    max-width: 100%;
+    border-radius: 5px;
+}
+
+.slider-navigation {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.slider-navigation input[type="radio"] {
+    display: none;
+}
+
+.slider-navigation label {
+    width: 10px;
+    height: 10px;
+    margin: 0 5px;
+    cursor: pointer;
+    transition: 1s;
+    border:2px solid #fff;
+    border-radius: 10px;
+    cursor: pointer;
+  
+}
+
+.slider-navigation input[type="radio"]:checked + label {
+    background-color: #ffffff;
+}
+
+.banners{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 5%;
+    
+}
+
+.imgbanner{
+    box-shadow: 0 0 10px #0e00d5 inset,
+    0 0 10px 4px #0e00d5;
+    width:50%;
+}
+
+
+/* Bloco dos slides de modalidades*/
+
+.bloco1{
+    display: flex;
+    margin-top: 5%;
+    justify-content:center;
+    align-items: center;
+}
+
+
+/* Bloco dos planos */
+.bloco2{
+    display: flex;
+    margin-top: 5%;
+    justify-content:space-around;
+    align-items: center;
+}
+.carousel{
+    width: 700px;
+    height: 500px;
+    overflow: hidden;
+    position: relative;
+    border-radius: 10px;
+    /*box-shadow: 0 0 10px #0e00d5 inset,
+    0 0 10px 4px #0e00d5; */
+  }
+
+  .carousel-container {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    transition: transform 0.5s ease;
+    border-radius: 10px;
+  }
+
+  .carousel-item {
+    max-width: 100%;
+    flex-shrink: 0;
+  }
+  .carousel-item img{
+    max-width: 100%;
+    border-radius: 5px;
+  }
+
+  .carousel-btn {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 50px;
+    height: 50px;
+    background-color: rgba(0, 0, 0, 0.5);
+    color: #fff;
+    font-size: 24px;
+    text-align: center;
+    justify-content: center;
+    line-height: 50px;
+    cursor: pointer;
+    border-radius: 100px;
+  }
+
+  .carousel-btn-left {
+    left: 10px;
+  }
+
+  .carousel-btn-right {
+    right: 10px;
+  }
+.titulobloco2{
+
+    display:flex;
+    color:#ffffff;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    margin-top: 5%;
+
+}
+
+/* Configuração dos cards dos planos */
+.card{
+
+    display: flex;
+    background-color: #ffffff;
+    width: 60%;
+    border-radius: 20px;
+    margin-bottom: 5%;
+    border:none;
+    margin-left: 2%;
+    margin-right: 2%;
+   
+    
+}
+/* Lado da imagem dos cards */
+.ladoimg{ 
+
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+
+}
+.ladoimg:hover img{
+    -webkit-transform: scale(1.1);
+    transform: scale(1.2);
+ }
+.card img{
+    max-width: 107%;
+    border-radius: 15px;
+    -webkit-transition: -webkit-transform .5s ease;
+    transition: transform .5s ease;
+}
+
+/* Lado da descrição do plano*/
+.ladodesc{
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    flex-direction: column;
+}
+/* Titulo do plano */
+.card h2{
+    position: relative;
+    width: 100%;
+    text-align: center; 
+    font-size: 2.5em; 
+    font-weight: 600; 
+    margin-bottom: 1%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+   
+}
+/* Cor dos titulos dos planos*/
+.b{
+    color:#0fcf96; 
+  
+}
+.g{
+    color:#FFBE00;
+}
+.p{
+    color:#5858589f;
+}
+/* Cor dos preços dos planos*/
+.precob{
+    color:#0fcf96; 
+    margin-bottom: 10%;
+    font-size: 1.5rem; 
+    font-weight: 600;
+}
+.precog{
+    color:#FFBE00;
+    margin-bottom: 10%;
+    font-size: 1.5rem; 
+    font-weight: 600;
+   
+}
+.precop{
+    color:#5858589f;
+    margin-bottom: 8%;
+    font-size: 1.5rem; 
+    font-weight: 600;
+}
+
+/* Botao de contratar os planos */
+.botaovalor{
+    background-color:#0052D5;
+    color:#ffff;
+    border-radius:15px;
+    padding: 5px 20px;
+    font-size:50;
+    font-weight: bold;
+    border: none;
+}
+.botaovalor:hover{
+    background-color: #041022;
+    color:#ffff;
+    cursor: pointer;
+    
+}
+
+/* Fim do bloco dos planos */
+
+
+/* Bloco do aplicativo */
+
+.blocoapp{
+    display: flex;
+    text-align: center;
+    justify-content: space-around;
+    margin-bottom: 3%;
+}
+.tituloblocoapp{
+
+    display:flex;
+    color:#ffffff;
+    text-align: center;
+    margin-top: 5%;
+    flex-direction: column;
+    font-size: 45px;
+
+}
+.textoapp1{
+    font-size: 25px;
+    color:#ffffff;
+    flex-direction: column;
+}
+.textoapp2{
+    font-size: 20px;
+    color:#ffffff;
+    flex-direction: column;
+}
+.appleft{
+    width: 50%;
+}
+
+.imagensdoapp{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.storeapp{
+    width: 35%;
+    cursor: pointer;
+}
+.logoapp{
+    width: 45%;
+    margin-top: 3%;
+}
+.imgcell{
+    animation: float 6s ease-out infinite;
+}
+@keyframes float {
+    0%{
+        transform: translateY(0px);
+    }
+    50%{
+        transform: translateY(-60px);
+    }
+    100%{
+        transform: translateY(0px);
+    }
+}
+
+  
+
+/*  Rodapé */
+footer{
+  background-color: #15191f;
+  align-items:center;
+  justify-content: center;
+ 
+}
+
+
+.textorodape{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: #fff;
+    font-weight: 500;
+    font-size: 20px;
+  
+}
+
+.textorodape p{
+    margin-bottom: 3%;
+}
+
+.textorodape:hover{
+    cursor: pointer;
+}
+
+/* Logo do rodapé*/
+.imgrodape{
+    display: flex;
+    align-items:center;
+    justify-content: center;
+    text-align: center;
+    
+}
+.imgrodape img{
+    width: 15%;
+    margin-top: 1%;
+    margin-bottom: 1%;
+}
+/*  redes sociais*/
+.redes{
+    display: flex;
+    align-items:center;
+    justify-content: center;
+    text-align: center;
+   
+}
+/* configuração dos ícones*/
+.icones{
+    width: 6%;
+    margin-bottom: 3%;
+}
+.icones:hover{
+    transform:scale(1.1);
+    cursor:pointer;
+    transition: transform .5s ease;
+}
+/* Fim do rodapé*/
+
+
