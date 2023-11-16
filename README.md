@@ -1,3 +1,4 @@
+<img src="03 Código-fonte/WebContent/imagensib/logoibofc.png">
 
 # Projeto IDEALBODY - A Academia Ideal para seu Corpo Ideal
 
