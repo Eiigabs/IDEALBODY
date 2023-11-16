@@ -9,6 +9,7 @@ Bem-vindo ao repositório do projeto IDEALBODY - A Academia Ideal para seu Corpo
 - João Lucas
 - Mateus Caio
 - Emanuelle Souza
+- Fernanda Cardoso
 
 ## Tecnologias Utilizadas
 O projeto IDEALBODY foi desenvolvido utilizando as seguintes tecnologias:
@@ -17,6 +18,8 @@ O projeto IDEALBODY foi desenvolvido utilizando as seguintes tecnologias:
 - HTML
 - CSS
 - JavaScript
+- Mysql
+- UML
 
 ## Objetivos
 O principal objetivo do projeto IDEALBODY é criar um sistema de academia que seja flexível e acessível, atendendo às necessidades de pessoas que têm pouco tempo para se dedicar a treinos físicos. Além disso, o projeto visa oferecer a possibilidade de acesso aos treinos por meio de um aplicativo, tornando a experiência mais conveniente para os usuários.
@@ -39,11 +42,12 @@ Se você deseja contribuir para o projeto IDEALBODY, fique à vontade para abrir
 ## Contato
 Você pode entrar em contato com os participantes do projeto IDEALBODY através dos seguintes meios:
 
-- Gabriel Gomes: [gabrielalisson790@gmail.com]
+- Gabriel Gomes: [gabrielgomesaggr@hotmail.com]
 - Daniela Pina: [pinadani1040@gmail.com]
 - João Lucas: [Jobatistacruz77123@gmail.com]
 - Mateus Caio: [teuskaio@gmail.com]
 - Emanuelle Souza: [emanuellesouza4002@gmail.com]
+- Fernanda Cardoso: [kelly2531@gmail.com]
 
 Agradecemos pelo seu interesse no projeto IDEALBODY e esperamos que ele possa contribuir para a promoção de um estilo de vida saudável e ativo.
 
