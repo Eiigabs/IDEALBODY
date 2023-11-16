@@ -13,6 +13,7 @@ Bem-vindo ao repositório do projeto IDEALBODY - A Academia Ideal para seu Corpo
 
 ## Tecnologias Utilizadas
 O projeto IDEALBODY foi desenvolvido utilizando as seguintes tecnologias:
+
   **Liguagens:**
   - Java
   - HTML
