@@ -13,18 +13,21 @@ Bem-vindo ao repositório do projeto IDEALBODY - A Academia Ideal para seu Corpo
 
 ## Tecnologias Utilizadas
 O projeto IDEALBODY foi desenvolvido utilizando as seguintes tecnologias:
-**Liguagens:**
-- Java
-- HTML
-- CSS
-[- JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E.svg?style=for-the-badge&logo=JavaScript&logoColor=black)
+  **Liguagens:**
+  - Java
+  - HTML
+  - CSS
+  - JavaScript
+
   **UML:**
-- Astah
+  - Astah
+  
   **Hospedagem:**
-- Github
+  - Github
+  
   **Banco de Dados:**
-- Mysql workbench
-- 
+  - Mysql workbench
+  
 ## Objetivos
 O principal objetivo do projeto IDEALBODY é criar um sistema de academia que seja flexível e acessível, atendendo às necessidades de pessoas que têm pouco tempo para se dedicar a treinos físicos. Além disso, o projeto visa oferecer a possibilidade de acesso aos treinos por meio de um aplicativo, tornando a experiência mais conveniente para os usuários.
 
